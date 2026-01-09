@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package event.service.v1;
+option go_package = "github.com/Timofey0880/GoProject2/event-service/internal/pb/event_api";
+import "models/event_model.proto";
+import "google/api/annotations.proto";
+
+service EventService {
+  rpc CreateEvent (CreateEventRequest) returns (CreateEventResponse) {
+    option (google.api.http) = {
+      post: "/event/create"
+      body: "*"
+    };
+  }
+  rpc GetEvent (GetEventRequest) returns (GetEventResponse) {
+    option (google.api.http) = {
+      post: "/event/get"
+      body: "*"
+    };
+  }
+}
+
+message CreateEventRequest {
+  string name = 1;
+  string city = 2;
+  string user = 3;
+}
+
+message CreateEventResponse {
+  uint64 event_id = 1;
+}
+
+message GetEventRequest {
+  uint64 event_id = 1;
+}
+
+message GetEventResponse {
+  string name = 1;
+  string city = 2;
+  string user = 3;
+}

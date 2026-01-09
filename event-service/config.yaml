@@ -1,0 +1,18 @@
+database:
+  host: "postgres"
+  port: 5432
+  username: "admin"
+  password: "admin"
+  name: "events_db"
+  ssl_mode: "disable"
+
+kafka:
+  host: "kafka"
+  port: 9094
+  event_created_topic_name: "event-created"
+
+EventServiceSettings:
+  minNameLen: 1
+  maxNameLen: 100
+  minCityLen: 1
+  maxCityLen: 100
