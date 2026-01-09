@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/Timofey0880/GoProject2/event-service/internal/models"
-	"github.com/Timofey0880/GoProject2/event-service/internal/services/eventService/mocks"
+	mocks "github.com/Timofey0880/GoProject2/event-service/internal/services/eventService/mocks"
 	"github.com/stretchr/testify/suite"
 	"gotest.tools/v3/assert"
 )

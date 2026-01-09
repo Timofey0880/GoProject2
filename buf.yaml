@@ -1,0 +1,18 @@
+version: v2
+
+modules:
+  - path: event-service\api
+
+deps:
+  - buf.build/googleapis/googleapis
+
+lint:
+  use:
+    - STANDARD
+  except:
+    - FIELD_NOT_REQUIRED
+  disallow_comment_ignores: true
+
+breaking:
+  use:
+    - FILE
