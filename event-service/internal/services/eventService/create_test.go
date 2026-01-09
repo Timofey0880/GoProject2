@@ -2,11 +2,11 @@ package eventService
 
 import (
 	"context"
-	"errors"
 	"testing"
 
 	"github.com/Timofey0880/GoProject2/event-service/internal/models"
-	mocks "github.com/Timofey0880/GoProject2/event-service/internal/services/eventService/mocks"
+	"github.com/Timofey0880/GoProject2/event-service/internal/services/eventService/mocks"
+	"github.com/pkg/errors"
 	"github.com/stretchr/testify/suite"
 	"gotest.tools/v3/assert"
 )
